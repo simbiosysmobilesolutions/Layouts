@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/BLUE"
+    tools:context="com.simbiosyscorp.tutorials.layouts.RelativeLayout">
+
+    <TextView
+        android:id="@+id/firstTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secTV"
+        android:background="#00688b"
+        android:text="First TextView" />
+
+    <TextView
+        android:id="@+id/secTV"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seventhTV"
+        android:layout_marginTop="20dp"
+        android:background="#e77"
+        android:text="Second TextView" />
+    <TextView
+        android:id="@+id/thirdTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/firstTV"
+        android:background="#e9dcb0"
+        android:layout_alignRight="@+id/secTV"
+        android:text="Third TextView" />
+
+    <TextView
+        android:id="@+id/fourthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffff32"
+        android:text="Fourth TextView" />
+    <TextView
+        android:id="@+id/fifthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffff32"
+        android:text="Fifth TextView" />
+
+    <TextView
+        android:id="@+id/seventhTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Relative Layout Example" />
+
+</RelativeLayout>
